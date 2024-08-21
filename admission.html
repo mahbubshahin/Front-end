@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="admission.js" />
+  </head>
+  <body class="bg-light">
+    <h1 class="text-center">WMES Program Admission Form</h1>
+
+    <div class="form-area py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9 mx-auto bg-white rounded-3 shadow-lg p-4">
+            <form
+              action=""
+              class="needs-validation was-validated "
+              novalidate=""
+            >
+  <!-- all section start -->
+            <div class="all_section border border-success rounded-2 px-3 pt-4">
+                          <!-- Person area start -->
+                          <section
+                          class="person_area border border-1 rounded-2 border-success p-3"
+                        >
+                          <!-- design -->
+          
+                          <div class="d-flex justify-content-center">
+                            <div
+                              class="px-5 py-1 fw-bold text-center bg-success text-white rounded rounded-5"
+                              style="margin-top: -2rem; width: 700px; height: 35px"
+                            >
+                              Graduation/Equivalent Level
+                            </div>
+                          </div>
+          
+                          <!-- input area -->
+                          <div class="row mt-3">
+                            <div class="mb-1 row">
+                              <label
+                                for="applicant_name"
+                                class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                >Applicant's Name</label
+                              >
+                              <div class="col-sm-8 col-12">
+                                <input
+                                  type="text"
+                                  class="form-control bg-light"
+                                  id="applicant_name"
+                                  name="applicant_name"
+                                  required=""
+                                  autocomplete="off"
+                                />
+                              </div>
+                            </div> 
+                           
+
+                            <div class="mb-1 row mt-1">
+                              <label
+                                for="applicant_f_name"
+                                class="col-sm-4 col-12 col-form-label py-1 text-sm-end fw-semibold mb-sm-0"
+                                >Father's Name</label
+                              >
+                              <div class="col-sm-8 col-12">
+                                <input
+                                  type="text"
+                                  class="form-control bg-light py-1"
+                                  id="applicant_f_name"
+                                  name="applicant_f_name"
+                                  required=""
+                                  autocomplete="off"
+                                />
+                              </div>
+                            </div>
+          
+                            <div class="mb-1 row mt-1">
+                              <label
+                                for="applicant_m_name"
+                                class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                >Mothers's Name</label
+                              >
+                              <div class="col-sm-8 col-12">
+                                <input
+                                  type="text"
+                                  class="form-control bg-light"
+                                  id="applicant_m_name"
+                                  name="applicant_m_name"
+                                  required=""
+                                  autocomplete="off"
+                                />
+                              </div>
+                            </div>
+          
+                            <div class="mb-1 row mt-1">
+                              <label
+                                for="date_of_birth"
+                                class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                >Date of Birth</label
+                              >
+                              <div class="col-sm-8 col-12">
+                                <input
+                                  type="date"
+                                  class="form-control bg-light"
+                                  id="date_of_birth"
+                                  name="date_of_birth"
+                                  required=""
+                                  autocomplete="off"
+                                />
+                              </div>
+                            </div>
+          
+                            <div class="mb-1 row mt-1">
+                              <label
+                                for="nationality"
+                                class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                >Nationality</label
+                              >
+                              <div class="col-sm-8 col-12">
+                                <input
+                                  type="text"
+                                  class="form-control bg-light"
+                                  id="nationality"
+                                  name="nationality"
+                                  list="nationalities"
+                                  required=""
+                                  autocomplete="off"
+                                />
+                              </div>
+          
+                              <datalist id="nationalities">
+                                <option value="Bangladeshi"></option>
+                                <option value="Arabian"></option>
+                              </datalist>
+                            </div>
+          
+                            <div class="mb-1 row mt-1">
+                              <label
+                                for="religion"
+                                class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                >Religion</label
+                              >
+                              <div class="col-sm-8 col-12">
+                                <input
+                                  type="text"
+                                  class="form-control bg-light"
+                                  id="religion"
+                                  name="religion"
+                                  list="religions"
+                                  required=""
+                                  autocomplete="off"
+                                />
+                              </div>
+          
+                              <datalist id="religions">
+                                <option value="Islam"></option>
+                                <option value="Christianity"></option>
+                                <option value="Hinduism"></option>
+                                <option value="Buddhism"></option>
+                              </datalist>
+                            </div>
+          
+                            <div class="mb-1 row mt-1">
+                              <label
+                                for="sex_choice"
+                                class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                >Sex</label
+                              >
+                              <div class="col-sm-8 col-12">
+                                <select
+                                  class="form-select bg-light"
+                                  id="sex_choice"
+                                  name="sex"
+                                  required=""
+                                  autocomplete="off"
+                                >
+                                  <option value="" disabled selected></option>
+                                  <option value="1">Male</option>
+                                  <option value="2">Female</option>
+                                  <option value="3">3rd Gender</option>
+                                </select>
+                              </div>
+                            </div>
+          
+                            <div class="mb-1 row mt-1">
+                              <label
+                                for="national_id"
+                                class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                >National ID</label
+                              >
+                              <div class="col-sm-8 col-12">
+                                <input
+                                  type="number"
+                                  class="form-control bg-light"
+                                  id="national_id"
+                                  name="national_id"
+                                  required=""
+                                  autocomplete="off"
+                                />
+                              </div>
+                            </div>
+          
+                            <div class="mb-1 row mt-1">
+                              <label
+                                for="marital_status"
+                                class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                >Marital Status</label
+                              >
+                              <div class="col-sm-8 col-12">
+                                <select
+                                  class="form-select bg-light"
+                                  id="marital_status"
+                                  name="marital_status"
+                                  required=""
+                                  autocomplete="off"
+                                >
+                                  <option value="" disabled selected></option>
+                                  <option value="1">Single</option>
+                                  <option value="2">Married</option>
+                                  <option value="3">Divorced</option>
+                                </select>
+                              </div>
+                            </div>
+          
+                            <div class="mb-1 row mt-1">
+                              <label
+                                for="mobile_number"
+                                class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                >Mobile Number</label
+                              >
+                              <div class="col-sm-8 col-12">
+                                <input
+                                  type="number"
+                                  class="form-control bg-light"
+                                  id="mobile_number"
+                                  name="mobile_number"
+                                  required=""
+                                  autocomplete="off"
+                                />
+                              </div>
+                            </div>
+          
+                            <div class="mb-1 row mt-1">
+                              <label
+                                for="email"
+                                class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                >Email</label
+                              >
+                              <div class="col-sm-8 col-12">
+                                <input
+                                  type="email"
+                                  class="form-control bg-light"
+                                  id="email"
+                                  name="email"
+                                  required=""
+                                  autocomplete="off"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <!-- end input area -->
+                        </section>
+
+                        <!-- end person area-->
+          
+                        <!-- address_area_start -->
+          
+                        <section class="address-area my-3">
+                          <div class="row g-2">
+                            <!-- Present Address -->
+                            <div class="col-lg-6 col-md-6 col-sm-12 pt-lg-4 pt-md-4">
+                              <div class="card border-success rounded-top-5 mt-md-2">
+                                <div
+                                  class="card-header rounded fw-bolder bg-success mx-3 text-white text-center"
+                                >
+                                  Present Address
+                                </div>
+                                <div class="card-body me-2">
+                                  <div class="mb-1 row ">
+                                    <label
+                                      for="care_of"
+                                      class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                      >Care of</label
+                                    >
+                                    <div class="col-sm-8">
+                                      <input
+                                        type="text"
+                                        class="form-control bg-light"
+                                        id="care_of"
+                                        name="care_of"
+                                        required
+                                        autocomplete="off"
+                                      />
+                                    </div>
+                                  </div>
+          
+                                  <div class="mb-1 row mt-2">
+                                    <label
+                                      for="village"
+                                      class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                      >Village/ Town/ Road</label
+                                    >
+                                    <div class="col-sm-8">
+                                      <textarea
+                                        name="village"
+                                        id="village"
+                                        class="form-control bg-light"
+                                        required
+                                        autocomplete="off"
+                                      ></textarea>
+                                    </div>
+                                  </div>
+                                  <div class="mb-1 row mt-2">
+                                    <label
+                                      for="district"
+                                      class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                      >District</label
+                                    >
+                                    <div class="col-sm-8">
+                                      <input
+                                        type="text"
+                                        class="form-control bg-light"
+                                        id="district"
+                                        name="district"
+                                        required
+                                        autocomplete="off"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="mb-1 row mt-2">
+                                    <label
+                                      for="upazila"
+                                      class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                      >Upazila/ P.S</label
+                                    >
+                                    <div class="col-sm-8">
+                                      <input
+                                        type="text"
+                                        class="form-control bg-light"
+                                        id="upazila"
+                                        name="upazila"
+                                        required
+                                        autocomplete="off"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="mb-1 row mt-2">
+                                    <label
+                                      for="post_office"
+                                      class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                      >Post Office</label
+                                    >
+                                    <div class="col-sm-8">
+                                      <input
+                                        type="text"
+                                        class="form-control bg-light"
+                                        id="post_office"
+                                        name="post_office"
+                                        required
+                                        autocomplete="off"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+          
+                            <!-- Permanent Address -->
+                            <div class="col-lg-6 col-md-6 col-sm-12 order-sm-1">
+                              <!-- Checkbox (Visible on all devices, above Permanent Address when col-sm-12) -->
+                              <div
+                                class="form-check align-items-end ms-auto fst-italic rounded mb-2"
+                              >
+                                <input
+                                  class="form-check-input px-1"
+                                  type="checkbox"
+                                  id="applicableCheck"
+                                />
+                                <label class="form-check-label" for="applicableCheck">
+                                  Same as Present Address
+                                </label>
+                              </div>
+          
+                              <div class="card border-success rounded-top-5">
+                                <div
+                                  class="card-header rounded fw-bolder mx-3 bg-success text-white text-center"
+                                >
+                                  Permanent Address
+                                </div>
+                                <div class="card-body me-2">
+                                  <div class="mb-1 row">
+                                    <label
+                                      for="prn_care_of"
+                                      class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                      >Care of</label
+                                    >
+                                    <div class="col-sm-8">
+                                      <input
+                                        type="text"
+                                        class="form-control bg-light"
+                                        id="prn_care_of"
+                                        name="prn_care_of"
+                                        required
+                                        autocomplete="off"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="mb-1 row mt-2">
+                                    <label
+                                      for="prn_village"
+                                      class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                      >Village/ Town/ Road</label
+                                    >
+                                    <div class="col-sm-8">
+                                      <textarea
+                                        name="prn_village"
+                                        id="prn_village"
+                                        class="form-control bg-light"
+                                        required
+                                        autocomplete="off"
+                                      ></textarea>
+                                    </div>
+                                  </div>
+                                  <div class="mb-1 row mt-2">
+                                    <label
+                                      for="prn_district"
+                                      class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                      >District</label
+                                    >
+                                    <div class="col-sm-8">
+                                      <input
+                                        type="text"
+                                        class="form-control bg-light"
+                                        id="prn_district"
+                                        name="prn_district"
+                                        required
+                                        autocomplete="off"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="mb-1 row mt-2">
+                                    <label
+                                      for="prn_upazila"
+                                      class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                      >Upazila/ P.S</label
+                                    >
+                                    <div class="col-sm-8">
+                                      <input
+                                        type="text"
+                                        class="form-control bg-light"
+                                        id="prn_upazila"
+                                        name="prn_upazila"
+                                        required
+                                        autocomplete="off"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="mb-1 row mt-2">
+                                    <label
+                                      for="prn_post_office"
+                                      class="col-sm-4 col-12 col-form-label text-sm-end fw-semibold mb-sm-0"
+                                      >Post Office</label
+                                    >
+                                    <div class="col-sm-8">
+                                      <input
+                                        type="text"
+                                        class="form-control bg-light"
+                                        id="prn_post_office"
+                                        name="prn_post_office"
+                                        required
+                                        autocomplete="off"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+          
+                          <!-- js -->
+                          <script>
+                            document
+                              .getElementById("applicableCheck")
+                              .addEventListener("change", function () {
+                                var isChecked = this.checked;
+          
+                                document.getElementById("prn_care_of").value = isChecked
+                                  ? document.getElementById("care_of").value
+                                  : "";
+                                document.getElementById("prn_village").value = isChecked
+                                  ? document.getElementById("village").value
+                                  : "";
+                                document.getElementById("prn_district").value = isChecked
+                                  ? document.getElementById("district").value
+                                  : "";
+                                document.getElementById("prn_upazila").value = isChecked
+                                  ? document.getElementById("upazila").value
+                                  : "";
+                                document.getElementById("prn_post_office").value =
+                                  isChecked
+                                    ? document.getElementById("post_office").value
+                                    : "";
+                              });
+          
+                            // Optional: Clear Permanent Address fields when unchecking the checkbox
+                            document
+                              .querySelectorAll(
+                                "#prn_care_of, #prn_village, #prn_district, #prn_upazila, #prn_post_office"
+                              )
+                              .forEach((input) => {
+                                input.addEventListener("input", function () {
+                                  document.getElementById(
+                                    "applicableCheck"
+                                  ).checked = false;
+                                });
+                              });
+                          </script>
+                        </section>
+          
+                        <!-- address_area_end -->
+          
+                        <!-- ssc start -->
+                        <section
+                          class="ssc_area border border-success rounded-2 p-3 mt-5"
+                        >
+                          <div class="d-flex justify-content-center">
+                            <div
+                              class="px-5 py-1 text-center fw-bold bg-success text-white rounded rounded-5"
+                              style="margin-top: -2rem; width: 700px; height: 35px"
+                            >
+                              SSC/Equivalent Level
+                            </div>
+                          </div>
+                          <div class="row mt-3">
+                            <!-- left -->
+                            <div class="col-md-6 col-sm-12">
+                              <!--  -->
+                              <div class="mb-3 row ">
+                                <label
+                                  for="ssc_examination"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Examination</label
+                                >
+                                <div class="col-sm-8">
+                                  <select
+                                    class="form-select"
+                                    name="ssc_examination"
+                                    id="ssc_examination"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                    <option value="1">S.S.C</option>
+                                    <option value="2">Dakhil</option>
+                                    <option value="3">S.S.C Vocational</option>
+                                    <option value="4">O level/Cambridge</option>
+                                    <option value="5">S.S.C Equivalent</option>
+                                    <option value="6">Dakhil Vovational</option>
+                                    <!-- Add options here -->
+                                  </select>
+                                </div>
+                              </div>
+                              <!--  -->
+                              <div class="mb-3 row">
+                                <label
+                                  for="ssc_roll_no"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Roll No</label
+                                >
+                                <div class="col-sm-8">
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    id="ssc_roll_no"
+                                    name="ssc_roll_no"
+                                    required
+                                    autocomplete="off"
+                                  />
+                                </div>
+                              </div>
+                              <!--  -->
+                              <div class="mb-3 row">
+                                <label
+                                  for="ssc_group_subject"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Group/Subject</label
+                                >
+                                <div class="col-sm-8">
+                                  <select
+                                    class="form-select"
+                                    id="ssc_group_subject"
+                                    name="ssc_group_subject"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                    <option value="1">Business Studies</option>
+                                    <option value="2">General</option>
+                                    <option value="3">Humanities</option>
+                                    <option value="4">Science</option>
+                                    <option value="5">Other</option>
+                                    <!-- Add options here -->
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+          
+                            <!-- right -->
+                            <div class="col-md-6 col-sm-12">
+                              <div class="mb-3 row">
+                                <label
+                                  for="ssc_board"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Board</label
+                                >
+                                <div class="col-sm-8">
+                                  <select
+                                    class="form-select"
+                                    id="ssc_board"
+                                    name="ssc_board"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                    <option value="1">Barishal</option>
+                                    <option value="2">Chattogram</option>
+                                    <option value="3">Cumilla</option>
+                                    <option value="4">Dhaka</option>
+                                    <option value="5">Dinajpur</option>
+                                    <option value="6">Jashore</option>
+                                    <option value="7">Madrasah</option>
+                                    <option value="8">Mymensingh</option>
+                                    <option value="9">Rajshahi</option>
+                                    <option value="10">Sylhet</option>
+                                    <option value="11">Technical</option>
+                                    <option value="12">Open University</option>
+                                    <option value="13">Cambridge International</option>
+                                    <option value="14">Other</option>
+                                    <!-- Add options here -->
+                                  </select>
+                                </div>
+                              </div>
+          
+                              <div class="row mb-3 align-items-center">
+                                <label
+                                  for="ssc_resutl_score"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Result</label
+                                >
+          
+                                <div class="col-sm-8" id="ssc_result-score">
+                                  <select
+                                    class="form-select"
+                                    id="ssc_resutl_score"
+                                    name="ssc_resutl_score"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                    <option value="division">1st Division</option>
+                                    <option value="division">2nd Division</option>
+                                    <option value="division">3rd Division</option>
+                                    <option value="gpa">GPA (Out of 4)</option>
+                                    <option value="gpa">GPA (Out of 5)</option>
+                                  </select>
+                                </div>
+                                <div class="col-sm-4" id="ssc_gpa" style="display: none">
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    id="ssc_gpa"
+                                    name="ssc_gpa"
+                                    placeholder="Enter GPA"
+                                  />
+                                </div>
+          
+                                <!-- ssc result js -->
+                                <script>
+                                  document
+                                    .getElementById("ssc_resutl_score")
+                                    .addEventListener("change", function () {
+                                      var resultColumn =
+                                        document.getElementById("ssc_result-score");
+                                      var ssc_gpa = document.getElementById("ssc_gpa");
+          
+                                      if (this.value === "gpa") {
+                                        resultColumn.classList.remove("col-sm-8");
+                                        resultColumn.classList.add("col-sm-4");
+                                        ssc_gpa.style.display = "block";
+                                      } else {
+                                        resultColumn.classList.remove("col-sm-4");
+                                        resultColumn.classList.add("col-sm-8");
+                                        ssc_gpa.style.display = "none";
+                                      }
+                                    });
+                                </script>
+                                <!-- end ssc result js  -->
+                              </div>
+          
+                              <div class="mb-3 row">
+                                <label
+                                  for="ssc_passing_year"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Passing Year</label
+                                >
+                                <div class="col-sm-8">
+                                  <select
+                                    class="form-select"
+                                    id="ssc_passing_year"
+                                    name="ssc_passing_year"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                  </select>
+                                </div>
+                              </div>
+          
+                              <!-- ssc passing year js -->
+          
+                              <script>
+                                document.addEventListener("DOMContentLoaded", () => {
+                                  const select =
+                                    document.getElementById("ssc_passing_year");
+                                  for (let year = 2024; year >= 1980; year--) {
+                                    select.add(new Option(year, year));
+                                  }
+                                });
+                              </script>
+                              <!-- end ssc passing year js  -->
+                            </div>
+                          </div>
+                        </section>
+                        <!-- ssc_end -->
+          
+                        <!-- hsc start -->
+                        <section
+                          class="hsc_area border border-success rounded-2 p-3 mt-5"
+                        >
+                          <div class="d-flex justify-content-center">
+                            <div
+                              class="px-5 py-1 fw-bold text-center bg-success text-white rounded rounded-5"
+                              style="margin-top: -2rem; width: 700px; height: 35px"
+                            >
+                              HSC/Equivalent Level
+                            </div>
+                          </div>
+                          <div class="row mt-3">
+                            <!-- left -->
+                            <div class="col-md-6 col-sm-12">
+                              <!--  -->
+                              <div class="mb-3 row">
+                                <label
+                                  for="hsc_examination"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Examination</label
+                                >
+                                <div class="col-sm-8">
+                                  <select
+                                    class="form-select"
+                                    name="hsc_examination"
+                                    id="hsc_examination"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                    <option value="1">H.S.C</option>
+                                    <option value="2">Alim</option>
+                                    <option value="3">H.S.C Vocational</option>
+                                    <option value="4">A level/Cambridge</option>
+                                    <option value="5">H.S.C Equivalent</option>
+                                    <option value="6">H.S.C Vovational</option>
+                                    <!-- Add options here -->
+                                  </select>
+                                </div>
+                              </div>
+                              <!--  -->
+                              <div class="mb-3 row">
+                                <label
+                                  for="hsc_roll_no"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Roll No</label
+                                >
+                                <div class="col-sm-8">
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    id="hsc_roll_no"
+                                    name="hsc_roll_no"
+                                    required
+                                    autocomplete="off"
+                                  />
+                                </div>
+                              </div>
+                              <!--  -->
+                              <div class="mb-3 row">
+                                <label
+                                  for="hsc_group_subject"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Group/Subject</label
+                                >
+                                <div class="col-sm-8">
+                                  <select
+                                    class="form-select"
+                                    id="hsc_group_subject"
+                                    name="hsc_group_subject"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                    <option value="1">Business Studies</option>
+                                    <option value="2">General</option>
+                                    <option value="3">Humanities</option>
+                                    <option value="4">Science</option>
+                                    <option value="5">Other</option>
+                                    <!-- Add options here -->
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+          
+                            <!-- right -->
+                            <div class="col-md-6 col-sm-12">
+                              <div class="mb-3 row">
+                                <label
+                                  for="hsc_board"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Board</label
+                                >
+                                <div class="col-sm-8">
+                                  <select
+                                    class="form-select"
+                                    id="hsc_board"
+                                    name="hsc_board"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                    <option value="1">Barishal</option>
+                                    <option value="2">Chattogram</option>
+                                    <option value="3">Cumilla</option>
+                                    <option value="4">Dhaka</option>
+                                    <option value="5">Dinajpur</option>
+                                    <option value="6">Jashore</option>
+                                    <option value="7">Madrasah</option>
+                                    <option value="8">Mymensingh</option>
+                                    <option value="9">Rajshahi</option>
+                                    <option value="10">Sylhet</option>
+                                    <option value="11">Technical</option>
+                                    <option value="12">Open University</option>
+                                    <option value="13">Cambridge International</option>
+                                    <option value="14">Other</option>
+                                    <!-- Add options here -->
+                                  </select>
+                                </div>
+                              </div>
+          
+                              <div class="row mb-3 align-items-center">
+                                <label
+                                  for="hsc_resutl_score"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Result</label
+                                >
+          
+                                <div class="col-sm-8" id="hsc_resutl_column">
+                                  <select
+                                    class="form-select"
+                                    id="hsc_resutl_score"
+                                    name="hsc_resutl_score"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                    <option value="Hsc_division">1st Division</option>
+                                    <option value="Hsc_division">2nd Division</option>
+                                    <option value="Hsc_division">3rd Division</option>
+                                    <option value="HSC_GPA">GPA (Out of 4)</option>
+                                    <option value="HSC_GPA">GPA (Out of 5)</option>
+                                  </select>
+                                </div>
+                                <div
+                                  class="col-sm-4"
+                                  id="hsc_gpa_input"
+                                  style="display: none"
+                                >
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    id="hsc_gpa_input"
+                                    name="hsc_gpa_input"
+                                    placeholder="Enter GPA"
+                                  />
+                                </div>
+          
+                                <!-- hsc result js -->
+                                <script>
+                                  document
+                                    .getElementById("hsc_resutl_score")
+                                    .addEventListener("change", function () {
+                                      var resultColumn =
+                                        document.getElementById("hsc_resutl_column");
+                                      var hscGpaInput =
+                                        document.getElementById("hsc_gpa_input");
+          
+                                      if (this.value === "HSC_GPA") {
+                                        resultColumn.classList.remove("col-sm-8");
+                                        resultColumn.classList.add("col-sm-4");
+                                        hscGpaInput.style.display = "block";
+                                      } else {
+                                        resultColumn.classList.remove("col-sm-4");
+                                        resultColumn.classList.add("col-sm-8");
+                                        hscGpaInput.style.display = "none";
+                                      }
+                                    });
+                                </script>
+                                <!-- end hsc result js  -->
+                              </div>
+          
+                              <div class="mb-3 row">
+                                <label
+                                  for="hsc_passing_year"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Passing Year</label
+                                >
+                                <div class="col-sm-8">
+                                  <select
+                                    class="form-select"
+                                    id="hsc_passing_year"
+                                    name="hsc_passing_year"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                  </select>
+                                </div>
+                              </div>
+          
+                              <!-- ssc passing year js -->
+          
+                              <script>
+                                document.addEventListener("DOMContentLoaded", () => {
+                                  const select =
+                                    document.getElementById("hsc_passing_year");
+                                  for (let year = 2024; year >= 1980; year--) {
+                                    select.add(new Option(year, year));
+                                  }
+                                });
+                              </script>
+                              <!-- end ssc passing year js  -->
+                            </div>
+                          </div>
+                        </section>
+                        <!-- hsc_end -->
+          
+                        <!-- Graduation start -->
+                        <section
+                          class="Graduation_area border border-success rounded-2 p-3 mt-5"
+                        >
+                          <div class="d-flex justify-content-center">
+                            <div
+                              class="px-5 py-1 fw-bold text-center bg-success text-white rounded rounded-5"
+                              style="margin-top: -2rem; width: 700px; height: 35px"
+                            >
+                              Graduation/Equivalent Level
+                            </div>
+                          </div>
+                          <!--  -->
+                          <div class="row mt-3">
+                            <!-- left -->
+                            <div class="col-md-6 col-sm-12">
+                              <!--  -->
+                              <div class="mb-3 row">
+                                <label
+                                  for="graduation_examination"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Examination</label
+                                >
+                                <div class="col-sm-8">
+                                  <select
+                                    class="form-select"
+                                    name="graduation_examination"
+                                    id="graduation_examination"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                    <option value="1">Honors</option>
+                                    <option value="2">Alim</option>
+                                    <option value="3">H.S.C Vocational</option>
+                                    <option value="4">A level/Cambridge</option>
+                                    <option value="5">H.S.C Equivalent</option>
+                                    <option value="6">H.S.C Vovational</option>
+                                    <!-- Add options here -->
+                                  </select>
+                                </div>
+                              </div>
+                              <!--  -->
+          
+                              <div class="mb-3 row">
+                                <label
+                                  for="University_list"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >University/Inst.
+                                </label>
+                                <div class="col-sm-8">
+                                  <select
+                                    class="form-select"
+                                    name="University_list"
+                                    id="University_list"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                    <option value="1">Dhaka University</option>
+                                    <option value="2">Alim</option>
+                                    <option value="3">H.S.C Vocational</option>
+                                    <option value="4">A level/Cambridge</option>
+                                    <option value="5">H.S.C Equivalent</option>
+                                    <option value="6">H.S.C Vovational</option>
+                                    <!-- Add options here -->
+                                  </select>
+                                </div>
+                              </div>
+          
+                              <div class="mb-3 row">
+                                <label
+                                  for="graduation_passing_year"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Passing Year</label
+                                >
+                                <div class="col-sm-8">
+                                  <select
+                                    class="form-select"
+                                    id="graduation_passing_year"
+                                    name="graduation_passing_year"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                  </select>
+                                </div>
+                              </div>
+          
+                              <!-- graduation_passing_year js -->
+          
+                              <script>
+                                document.addEventListener("DOMContentLoaded", () => {
+                                  const select = document.getElementById(
+                                    "graduation_passing_year"
+                                  );
+                                  for (let year = 2024; year >= 1980; year--) {
+                                    select.add(new Option(year, year));
+                                  }
+                                });
+                              </script>
+                              <!-- end graduation_passing_year js  -->
+                            </div>
+          
+                            <!-- right -->
+                            <div class="col-md-6 col-sm-12">
+                              <!--  -->
+                              <div class="mb-3 row">
+                                <label
+                                  for="graduationgroup_subject"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Group/Subject</label
+                                >
+                                <div class="col-sm-8">
+                                  <select
+                                    class="form-select"
+                                    id="graduationgroup_subject"
+                                    name="graduationgroup_subject"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                    <option value="1">Business Studies</option>
+                                    <option value="2">General</option>
+                                    <option value="3">Humanities</option>
+                                    <option value="4">Science</option>
+                                    <option value="5">Other</option>
+                                    <!-- Add options here -->
+                                  </select>
+                                </div>
+                              </div>
+                              <!--  -->
+          
+                              <div class="row mb-3 align-items-center">
+                                <label
+                                  for="graduation_resutl_score"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Result</label
+                                >
+          
+                                <div class="col-sm-8" id="graduation_resutl_column">
+                                  <select
+                                    class="form-select"
+                                    id="graduation_resutl_score"
+                                    name="graduation_resutl_score"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                    <option value="graduation_division">
+                                      1st Division
+                                    </option>
+                                    <option value="graduation_division">
+                                      2nd Division
+                                    </option>
+                                    <option value="graduation_division">
+                                      3rd Division
+                                    </option>
+                                    <option value="graduation_CGPA">
+                                      CGPA (Out of 4)
+                                    </option>
+                                  </select>
+                                </div>
+                                <div
+                                  class="col-sm-4"
+                                  id="graduation_cgpa_input"
+                                  style="display: none"
+                                >
+                                  <input
+                                    type="number"
+                                    class="form-control"
+                                    id="graduation_cgpa_input"
+                                    name="graduation_cgpa_input"
+                                    placeholder="Enter GPA"
+                                  />
+                                </div>
+          
+                                <!--  result js -->
+                                <script>
+                                  document
+                                    .getElementById("graduation_resutl_score")
+                                    .addEventListener("change", function () {
+                                      var resultColumn = document.getElementById(
+                                        "graduation_resutl_column"
+                                      );
+                                      var CGpaInput = document.getElementById(
+                                        "graduation_cgpa_input"
+                                      );
+          
+                                      if (this.value === "graduation_CGPA") {
+                                        resultColumn.classList.remove("col-sm-8");
+                                        resultColumn.classList.add("col-sm-4");
+                                        CGpaInput.style.display = "block";
+                                      } else {
+                                        resultColumn.classList.remove("col-sm-4");
+                                        resultColumn.classList.add("col-sm-8");
+                                        CGpaInput.style.display = "none";
+                                      }
+                                    });
+                                </script>
+                                <!-- end  result js  -->
+                              </div>
+          
+                              <!--  -->
+          
+                              <!--  -->
+                              <div class="mb-3 row">
+                                <label
+                                  for="graduation_course_duration"
+                                  class="col-sm-4 col-form-label fw-semibold"
+                                  >Course Duration</label
+                                >
+                                <div class="col-sm-8">
+                                  <select
+                                    class="form-select"
+                                    name="graduation_course_duration"
+                                    id="graduation_course_duration"
+                                    required
+                                    autocomplete="off"
+                                  >
+                                    <option value="" disabled selected></option>
+                                    <option value="1">4 Year</option>
+                                    <option value="2">3 Yeaar</option>
+                                    <option value="3">H.S.C Vocational</option>
+                                    <!-- Add options here -->
+                                  </select>
+                                </div>
+                              </div>
+                              <!--  -->
+                            </div>
+                          </div>
+                        </section>
+                        <!-- Graduation_end -->
+          
+                        <!-- Post Gradution start -->
+          
+                        <section class="post_graduation_area mt-4">
+                          <!-- Checkbox -->
+                          <div class="form-check mb-4 fst-italic">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="post_graduation_applicableCheck"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="post_graduation_applicableCheck"
+                            >
+                              If applicable
+                            </label>
+                          </div>
+                          <!--  -->
+          
+                          <!-- disable / inable -->
+                          <fieldset id="Post_graduationForm" disabled>
+                            <!-- form_area -->
+                            <div
+                              class="post_graduation_form border border-success rounded-2 p-3"
+                            >
+                              <div class="d-flex justify-content-center">
+                                <div
+                                  class="px-5 py-1 fw-bold text-center bg-success text-white rounded rounded-5"
+                                  style="margin-top: -2rem; width: 700px; height: 35px"
+                                >
+                                  Post Graduation/Equivalent Level
+                                </div>
+                              </div>
+                              <!--  -->
+          
+                              <div class="row mt-3">
+                                <!-- left -->
+                                <div class="col-md-6 col-sm-12">
+                                  <!--  -->
+                                  <div class="mb-3 row">
+                                    <label
+                                      for="post_graduation_examination"
+                                      class="col-sm-4 col-form-label fw-semibold"
+                                      >Examination</label
+                                    >
+                                    <div class="col-sm-8">
+                                      <select
+                                        class="form-select"
+                                        name="post_graduation_examination"
+                                        id="post_graduation_examination"
+                                        required
+                                        autocomplete="off"
+                                      >
+                                        <option value="" disabled selected></option>
+                                        <option value="1">Masters</option>
+                                        <option value="2">Alim</option>
+                                        <option value="3">H.S.C Vocational</option>
+                                        <option value="4">A level/Cambridge</option>
+                                        <option value="5">H.S.C Equivalent</option>
+                                        <option value="6">H.S.C Vovational</option>
+                                        <!-- Add options here -->
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <!--  -->
+          
+                                  <div class="mb-3 row">
+                                    <label
+                                      for="post_graduation_university_list"
+                                      class="col-sm-4 col-form-label fw-semibold"
+                                      >University/Inst.
+                                    </label>
+                                    <div class="col-sm-8">
+                                      <select
+                                        class="form-select"
+                                        name="post_graduation_university_list"
+                                        id="post_graduation_university_list"
+                                        required
+                                        autocomplete="off"
+                                      >
+                                        <option value="" disabled selected></option>
+                                        <option value="1">Dhaka University</option>
+                                        <option value="2">Alim</option>
+                                        <option value="3">H.S.C Vocational</option>
+                                        <option value="4">A level/Cambridge</option>
+                                        <option value="5">H.S.C Equivalent</option>
+                                        <option value="6">H.S.C Vovational</option>
+                                        <!-- Add options here -->
+                                      </select>
+                                    </div>
+                                  </div>
+          
+                                  <div class="mb-3 row">
+                                    <label
+                                      for="post_graduation_passing_year"
+                                      class="col-sm-4 col-form-label fw-semibold"
+                                      >Passing Year</label
+                                    >
+                                    <div class="col-sm-8">
+                                      <select
+                                        class="form-select"
+                                        id="post_graduation_passing_year"
+                                        name="post_graduation_passing_year"
+                                        required
+                                        autocomplete="off"
+                                      >
+                                        <option value="" disabled selected></option>
+                                      </select>
+                                    </div>
+                                  </div>
+          
+                                  <!--post graduation_passing_year js -->
+          
+                                  <script>
+                                    document.addEventListener("DOMContentLoaded", () => {
+                                      const select = document.getElementById(
+                                        "post_graduation_passing_year"
+                                      );
+                                      for (let year = 2024; year >= 1980; year--) {
+                                        select.add(new Option(year, year));
+                                      }
+                                    });
+                                  </script>
+                                  <!-- end graduation_passing_year js  -->
+                                </div>
+          
+                                <!-- right -->
+                                <div class="col-md-6 col-sm-12">
+                                  <!--  -->
+                                  <div class="mb-3 row">
+                                    <label
+                                      for="post_graduationgroup_subject"
+                                      class="col-sm-4 col-form-label fw-semibold"
+                                      >Group/Subject</label
+                                    >
+                                    <div class="col-sm-8">
+                                      <select
+                                        class="form-select"
+                                        id="post_graduationgroup_subject"
+                                        name="post_graduationgroup_subject"
+                                        required
+                                        autocomplete="off"
+                                      >
+                                        <option value="" disabled selected></option>
+                                        <option value="1">Business Studies</option>
+                                        <option value="2">General</option>
+                                        <option value="3">Humanities</option>
+                                        <option value="4">Science</option>
+                                        <option value="5">Other</option>
+                                        <!-- Add options here -->
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <!--  -->
+          
+                                  <div class="row mb-3 align-items-center">
+                                    <label
+                                      for="post_graduation_resutl_score"
+                                      class="col-sm-4 col-form-label fw-semibold"
+                                      >Result</label
+                                    >
+          
+                                    <div
+                                      class="col-sm-8"
+                                      id="post_graduation_resutl_column"
+                                    >
+                                      <select
+                                        class="form-select"
+                                        id="post_graduation_resutl_score"
+                                        name="post_graduation_resutl_score"
+                                        required
+                                        autocomplete="off"
+                                      >
+                                        <option value="" disabled selected></option>
+                                        <option value="post_graduation_division">
+                                          1st Division
+                                        </option>
+                                        <option value="post_graduation_division">
+                                          2nd Division
+                                        </option>
+                                        <option value="post_graduation_division">
+                                          3rd Division
+                                        </option>
+                                        <option value="post_graduation_CGPA">
+                                          CGPA (Out of 4)
+                                        </option>
+                                      </select>
+                                    </div>
+                                    <div
+                                      class="col-sm-4"
+                                      id="post_graduation_cgpa_input"
+                                      style="display: none"
+                                    >
+                                      <input
+                                        type="number"
+                                        class="form-control"
+                                        id="post_graduation_cgpa_input"
+                                        name="post_graduation_cgpa_input"
+                                        placeholder="Enter CGPA"
+                                      />
+                                    </div>
+          
+                                    <!--  result js -->
+                                    <script>
+                                      document
+                                        .getElementById("post_graduation_resutl_score")
+                                        .addEventListener("change", function () {
+                                          var resultColumn = document.getElementById(
+                                            "post_graduation_resutl_column"
+                                          );
+                                          var post_graduation_CGpaInput =
+                                            document.getElementById(
+                                              "post_graduation_cgpa_input"
+                                            );
+          
+                                          if (this.value === "post_graduation_CGPA") {
+                                            resultColumn.classList.remove("col-sm-8");
+                                            resultColumn.classList.add("col-sm-4");
+                                            post_graduation_CGpaInput.style.display =
+                                              "block";
+                                          } else {
+                                            resultColumn.classList.remove("col-sm-4");
+                                            resultColumn.classList.add("col-sm-8");
+                                            post_graduation_CGpaInput.style.display =
+                                              "none";
+                                          }
+                                        });
+                                    </script>
+                                    <!-- end result js  -->
+                                  </div>
+          
+                                  <!--  -->
+          
+                                  <!--  -->
+                                  <div class="mb-3 row">
+                                    <label
+                                      for="graduation_course_duration"
+                                      class="col-sm-4 col-form-label fw-semibold"
+                                      >Course Duration</label
+                                    >
+                                    <div class="col-sm-8">
+                                      <select
+                                        class="form-select"
+                                        name="graduation_course_duration"
+                                        id="graduation_course_duration"
+                                        required
+                                        autocomplete="off"
+                                      >
+                                        <option value="" disabled selected></option>
+                                        <option value="1">1 Year</option>
+                                        <option value="2">2 Yeaar</option>
+                                        <!-- Add options here -->
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <!--  -->
+                                </div>
+                              </div>
+                            </div>
+          
+                            <!-- JavaScript to toggle form enabled/disabled -->
+                            <script>
+                              document
+                                .getElementById("post_graduation_applicableCheck")
+                                .addEventListener("change", function () {
+                                  const form = document.getElementById(
+                                    "Post_graduationForm"
+                                  );
+                                  if (this.checked) {
+                                    form.removeAttribute("disabled");
+                                  } else {
+                                    form.setAttribute("disabled", "disabled");
+                                  }
+                                });
+                            </script>
+                          </fieldset>
+                        </section>
+          
+                        <!-- Graduation_end -->
+
+
+
+        <!-- Job Experience start-->
+        <section class="job_experience_area mt-4">
+          <!-- Checkbox -->
+          <div class="form-check mb-4 fst-italic">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="job_experience_applicableCheck"
+            />
+            <label
+              class="form-check-label"
+              for="job_experience_applicableCheck"
+            >
+              If any
+            </label>
+          </div>
+          <!--  -->
+
+          <!-- disable / inable -->
+          <fieldset id="job_experience_Form" disabled>
+              <!-- form_area -->
+            <div
+              class="post_graduation_form border border-success rounded-2 p-3" 
+            >
+              
+              <div class="d-flex justify-content-center">
+                <div
+                  class="px-5 py-1 fw-bold text-center bg-success text-white rounded rounded-5"
+                  style="margin-top: -2rem; width: 700px; height: 35px"
+                >
+                Job Experiences
+                </div>
+              </div>
+              <!--  -->
+
+              <div class="row mt-3">
+
+                <!-- left -->
+                <div class="col-md-6 col-sm-12">
+                  <!--  -->
+                  <div class="mb-3 row">
+                    <label
+                      for="job_experience_Employed_on"
+                      class="col-sm-4 col-form-label fw-semibold"
+                      >Employed on</label
+                    >
+                    <div class="col-sm-8">
+                      <select
+                        class="form-select"
+                        name="job_experience_Employed_on"
+                        id="job_experience_Employed_on"
+                        required
+                        autocomplete="off"
+                      >
+                        <option value="" disabled selected></option>
+                        <option value="1">Masters</option>
+                        <option value="2">Alim</option>
+                        <option value="3">H.S.C Vocational</option>
+                        <option value="4">A level/Cambridge</option>
+                        <option value="5">H.S.C Equivalent</option>
+                        <option value="6">H.S.C Vovational</option>
+                        <!-- Add options here -->
+                      </select>
+                    </div>
+                  </div>
+                  <!--  -->
+
+                  <div class="mb-3 row">
+                    <label for="job_experience_Designation" class="col-sm-4 col-form-label fw-semibold">
+                      Designation
+                    </label>
+                    <div class="col-sm-8">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="job_experience_Designation"
+                        id="job_experience_Designation"
+                        required
+                        autocomplete="off"
+                      />
+                    </div>
+                  </div>
+                              <!--  -->
+                  
+
+                              <div class="mb-3 row align-items-center">
+                                <label for="job_experience_length_service" class="col-sm-4 col-form-label fw-semibold">
+                                  Length of Service
+                                </label>
+                                <div class="col-sm-4 d-flex align-items-center">
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    name="job_experience_serive_start_date"
+                                    id="job_experience_serive_start_date"
+                                    required
+                                    autocomplete="off"
+                                    onchange="calculateServiceLength()"
+                                  />
+                              
+                                  <div class="px-1 text-center">to</div>
+                              
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    name="job_experience_service_end_date"
+                                    id="job_experience_service_end_date"
+                                    required
+                                    autocomplete="off"
+                                    onchange="calculateServiceLength()"
+                                    max=""
+                                  />
+                                </div>
+                                <!-- show job experience data -->
+                                <div id="service_length_result" class="ms-2"></div>
+                                <!-- job experience data js code -->
+                                <script>
+                                  // Set max date for the end date input
+                                  document.getElementById('job_experience_service_end_date').max = new Date().toISOString().split("T")[0];
+                              
+                                  function calculateServiceLength() {
+                                    const start = new Date(document.getElementById('job_experience_serive_start_date').value);
+                                    const end = new Date(document.getElementById('job_experience_service_end_date').value);
+                              
+                                    if (start && end && start <= end) {
+                                      let years = end.getFullYear() - start.getFullYear();
+                                      let months = end.getMonth() - start.getMonth();
+                                      let days = end.getDate() - start.getDate();
+                              
+                                      // Adjust if days or months are negative
+                                      if (days < 0) {
+                                        months--;
+                                        days += new Date(end.getFullYear(), end.getMonth(), 0).getDate();
+                                      }
+                              
+                                      if (months < 0) {
+                                        years--;
+                                        months += 12;
+                                      }
+                              
+                                      document.getElementById('service_length_result').innerHTML = 
+                                      `<div class="col-sm-8 fst-italic offset-sm-4 text-success">
+                                         ${years} years, ${months} months, and ${days} days
+                                       </div>`;
+                                    } else {
+                                      document.getElementById('service_length_result').innerHTML = '';
+                                    }
+                                  }
+                                </script>
+                              </div>
+                              
+                  
+<!--  -->
+
+                </div>
+
+                <!-- right -->
+                <div class="col-md-6 col-sm-12">
+        <!--  -->
+                  <div class=" mb-3  row">
+                    <label for="job_experience_organization" class="col-sm-4 col-form-label fw-semibold">
+                      Organization
+                    </label>
+                    <div class="col-sm-8">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="job_experience_organization"
+                        id="job_experience_organization"
+                        required
+                        autocomplete="off"
+                      />
+                    </div>
+                  </div>
+                  <!--  -->
+
+                  <!--  -->
+                  <div class="row mt-lg-2 mt-md-5  ">
+                    <label for="job_experience_description" class="col-sm-4 col-form-label fw-semibold">
+                      Description
+                    </label> 
+                    <div class="col-sm-8">
+                      <textarea
+                      name="job_experience_description"
+                      id="job_experience_description"
+                      class="form-control w-100 h-75"
+                      required
+                      autocomplete="off"
+                    ></textarea>
+
+                    </div>
+                  </div>
+                <!--  -->
+
+                  <!--  -->
+                  <div class="mb-3 mt-lg-1 mt-md-3 row">
+                    <label for="job_experience_organization" class="col-sm-4 col-form-label fw-semibold">
+                      address
+                    </label>
+                    <div class="col-sm-8">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="job_experience_organization"
+                        id="job_experience_organization"
+                        required
+                        autocomplete="off"
+                      />
+                    </div>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+            </div>
+
+            <!-- JavaScript to toggle form enabled/disabled -->
+            <script>
+              document
+                .getElementById("job_experience_applicableCheck")
+                .addEventListener("change", function () {
+                  const form = document.getElementById(
+                    "job_experience_Form"
+                  );
+                  if (this.checked) {
+                    form.removeAttribute("disabled");
+                  } else {
+                    form.setAttribute("disabled", "disabled");
+                  }
+                });
+            </script>
+          </fieldset>
+        </section>
+
+
+        <!-- end Job Experienc -->
+
+
+          
+                        <!-- applicant photo / signature start -->
+                       <section class="applicant_photos_area mt-5">
+                        <div class="post_graduation_form border border-success rounded-2 p-3">
+          
+                          <div class="d-flex justify-content-center">
+                            <div
+                              class="px-5 py-1 fw-bold text-center bg-success text-white rounded-5"
+                              style="margin-top: -2rem; width: 700px; height: 35px"
+                            >
+                              Upload Photo and Signature
+                            </div>
+                          </div>
+                          
+
+                          <p class="pt-3 pb-1 px-3 text-align fst-italic">
+                           <span class="fw-bold">N.B: </span> Photo must be <span class="fw-bold"> 300 X 300 pixels </span> (width X height)  <span class="fw-bold text-danger">[ .jpg format] </span> and file size not more than <span class="text-danger"> 100 KB (Minimum 4KB) </span> and Signature must be <span class="fw-bold">300 X 80 pixels </span>  (width X height) <span class="fw-bold text-danger"> [ .jpg format] </span> and file size not more than <span class="text-danger"> 60 KB (Minimum 3KB) </span>. Colour Photo is a must. Black & White, Monochrome, or Grayscale photo or any image other than a photo will not be accepted. This application is capable of detecting images with <span class="text-danger"> Facial Recognition </span>. Please avoid uploading unacceptable photos.
+                        </p>
+                          
+                          <!--  -->
+                          <div class="row d-flex g-3 align-items-center justify-content-between">
+                            <!-- Photo Upload -->
+                            <div class="col-md-8 col-12">
+                              <div class="row d-flex align-items-center text-center">
+                                <label
+                                  for="applicant_img_upload"
+                                  class="col-md-5 col-12 col-form-label fw-semibold"
+                                  >Upload Photo</label
+                                >
+                                <div class="col-md-7 col-12">
+                                  <input
+                                    type="file"
+                                    class="form-control border border-bottom border-3"
+                                    name="applicant_img_upload"
+                                    id="applicant_img_upload"
+                                    accept="image/*"
+                                    onchange="validateImage(event, 300, 300, 100, 'applicant_img_preview')"
+                                    required
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-12 text-md-end">
+                              <div class="applicant_img text-center align-content-center">
+                                <img
+                                  id="applicant_img_preview"
+                                  name="applicant_img_preview"
+                                  src=""
+                                  class="img-fluid w-50 rounded border p-2 px-3 border-success rounded-2"
+                                  alt="photo preview"
+                                />
+                              </div>
+                            </div>
+                          
+                            <!-- Signature Upload -->
+                            <div class="col-md-8 col-12">
+                              <div class="row d-flex align-items-center text-center">
+                                <label
+                                  for="input_applicant_signature"
+                                  class="col-md-5 col-12 col-form-label fw-semibold"
+                                  >Upload Signature</label
+                                >
+                                <div class="col-md-7 col-12">
+                                  <input
+                                    type="file"
+                                    class="form-control border border-bottom border-3"
+                                    name="input_applicant_signature"
+                                    id="input_applicant_signature"
+                                    accept="image/*"
+                                    onchange="validateImage(event, 300, 80, 60, 'applicant_signature_preview')"
+                                    required
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-12 text-md-end">
+                              <div class="applicant_signature text-center align-content-center">
+                                <img
+                                  id="applicant_signature_preview"
+                                  name="applicant_signature_preview"
+                                  src=""
+                                  class="img-fluid w-50 rounded border p-2 px-1 border-success rounded-2"
+                                  style="height: 60px; width: 70px;"
+                                  alt="signature preview"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <!-- JavaScript Code -->
+                          <script>
+                            function validateImage(event, maxWidth, maxHeight, maxSizeKB, previewId) {
+                              const file = event.target.files[0];
+                              const img = new Image();
+                              const maxSizeBytes = maxSizeKB * 1024;
+                          
+                              img.src = URL.createObjectURL(file);
+                              img.onload = function () {
+                                if (img.width !== maxWidth || img.height !== maxHeight) {
+                                  alert(`Image size must be ${maxWidth}x${maxHeight} pixels.`);
+                                  event.target.value = ''; // Clear the input field
+                                } else if (file.size > maxSizeBytes) {
+                                  alert(`File size must be less than ${maxSizeKB} KB.`);
+                                  event.target.value = ''; // Clear the input field
+                                } else {
+                                  document.getElementById(previewId).src = img.src; // Show the preview
+                                }
+                              };
+                            }
+                          </script>
+                          
+          
+          
+                        </div>
+                        <!--  -->
+                      </section>          
+                        <!-- end applicant photo / signature -->
+          
+          
+                        <!-- declare section start -->
+                      <section class="declare_area mt-3">
+                       
+
+
+ <!-- Checkbox -->
+ <div class="form-check mb-4 fst-italic">
+  <input
+    class="form-check-input"
+    type="checkbox"
+    id="job_experience_applicableCheck"
+  />
+  <label
+    class="form-check-label"
+    for="job_experience_applicableCheck"
+  >
+  I declare that the information provided in this form are correct, true and complete to the best of my knowledge and belief. If any information is found false, incorrect, incomplete or if any ineligibility is detected before or after the examination, any action can be taken against me by the Authority including cancellation of my candidature.
+  </label>
+</div>
+<!--  -->
+
+
+                      
+
+                        <!--  -->
+
+                      </section>
+                      <!-- end declare section -->
+
+
+
+
+                      
+            </div>
+<!-- end all section -->
+              <div class="submit_btn text-center">
+                <button type="submit" class="btn btn-success btn-outline-light border-dark mt-3 py-2 px-3 fw-bold shadow  ">Submit</button>
+            </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
